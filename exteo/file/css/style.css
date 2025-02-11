@@ -113,11 +113,14 @@ header {
       }
     }
   }
-  .navigasi button {
+ .navigasi {
+  & button.menu-toggle {
+    display: none;
+  }
+  & button {
   width: 40px;
   height: 40px;
   cursor: pointer;
-  display: flex;
   align-items: center;
   justify-content: center;
   border: none;
@@ -131,7 +134,12 @@ header {
       }
     }
   }
-
+  @media (max-width: 1007px){
+   &  button.menu-toggle {
+        display: flex;
+     }
+    }
+ }
  .navbars-list {
   width: 100%;
   opacity: 1;
