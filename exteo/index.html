@@ -12,6 +12,22 @@
     <script src="script.js" title="script"></script>
   </head>
   <body>
-
+    <div class="loading">
+    <div class='loader'>
+    <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+    <circle class="spin2" cx="400" cy="400" fill="none"
+      r="200" stroke-width="50" stroke="#FFFFFF"
+      stroke-dasharray="522 1400"
+      stroke-linecap="round" />
+  </svg>
+</div>
+</div>
+<script>
+document.body.className += " ex-loading";
+window.addEventListener("load", showPage, false);
+function showPage() {
+  document.body.className = document.body.className.replace("ex-loading","");
+}
+</script>
   </body>
 </html>
