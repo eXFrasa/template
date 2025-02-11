@@ -9,7 +9,8 @@
   box-sizing: border-box;
 }
 body {
-background-color: #aeaaea;
+    background: var(--var-color-page);
+    font-family: "Poppins", sans-serif;
 }
 header {
     top:-5px;
