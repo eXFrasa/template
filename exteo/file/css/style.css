@@ -3,6 +3,11 @@
    --var-color-font: #f0f4f4;
    --var-color-page: #0d141e;
   }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
 background-color: #aeaaea;
 }
